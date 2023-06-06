@@ -32,30 +32,12 @@
 .navbar-brand > span{
   padding-top: 200px;
   font-weight:900;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .fixed-top{
   background-color: rgb(15,103,143, 0);
 }
-
-
-/*Hero */
-
-.hero-card-overlay{
-  margin-top: 40vh;
-}
-
-
-.hero-tab{
-  background-color: #fff;
-  border-radius: 10px;
-  margin-top: -30px;
-  position: relative;
-  overflow: hidden;
-}
-
-
 
 .nav-tabs .nav-link{
   margin: 0;
@@ -69,15 +51,49 @@
   color: #fff;
 }
 
+.navbar{
+  padding: 0;
+}
 
+/*Hero */
+
+.hero-card-overlay{
+  margin-top: 40vh;
+}
+
+
+.hero-tab{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: -60px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-card{
+  min-height: 400px;
+  overflow-x: hidden;background-image: url('./images/emirates2.jpg');
+}
+
+.hero-image{
+  position: relative;
+}
+
+
+
+
+/* Utils */
 .fa-solid{
   color: #494949;
-  background-color: #fafbfc;
+  background-color: #dfeaf5;
   padding: 10px;
   border-radius: 20px;
 }
 
-/* Utils */
+.white-section{
+  background-color: #fff;
+}
 
 /* button */
 
@@ -87,6 +103,7 @@
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
+  border: none;
   }
   
   .btn-primary:hover{

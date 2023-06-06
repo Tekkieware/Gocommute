@@ -5,7 +5,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 function Header() {
   return (
-        <Navbar expand="lg" fixed="top" collapseOnSelect>
+        <Navbar expand="lg" collapseOnSelect>
           <Container>
         <LinkContainer to="/">  
         <Navbar.Brand>
