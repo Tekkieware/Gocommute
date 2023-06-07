@@ -1,11 +1,11 @@
 import React from 'react'
 import logo from '../images/Logo.png'
-import {Navbar, Nav, Image, Container} from 'react-bootstrap'
+import {Navbar, Nav, Image, Container, Button} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 
 function Header() {
   return (
-        <Navbar expand="lg" collapseOnSelect>
+        <Navbar expand="lg" sticky='top' collapseOnSelect>
           <Container>
         <LinkContainer to="/">  
         <Navbar.Brand>
@@ -20,16 +20,16 @@ function Header() {
           </LinkContainer>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
-             <Nav className="me-auto">
+             <Nav className="me-auto sections text-center text-lg-start">
              <LinkContainer to="/">
-            <Nav.Link>Why us</Nav.Link>
+            <Nav.Link>Why Us</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/">
-            <Nav.Link>testimonial</Nav.Link>
+            <Nav.Link>Testimonial</Nav.Link>
             </LinkContainer>
             
           </Nav>
-          <Nav className="ms-auto">
+          <Nav className="ms-auto pages text-center text-lg-start">
             <LinkContainer to="/">
             <Nav.Link>Home</Nav.Link>
             </LinkContainer>
@@ -38,6 +38,10 @@ function Header() {
             </LinkContainer>
             <LinkContainer to="about">
             <Nav.Link>About Us</Nav.Link>
+            </LinkContainer> 
+            <LinkContainer to="contact" className='d-block d-lg-none'>
+              
+            <Nav.Link><Button className='client'>Become a Client</Button></Nav.Link>
             </LinkContainer>  
           </Nav>
         </Navbar.Collapse>
