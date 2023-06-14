@@ -5,7 +5,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 function Footer() {
   return (
-    <Container fluid className='mt-3 footer'>
+    <Container fluid className='footer'>
       <Container className='footer'>
       <Row className='footer'>
         <Col md={12} className='footer'>

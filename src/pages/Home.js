@@ -11,7 +11,6 @@ import {
   Image,
   CardGroup,
 } from "react-bootstrap";
-import FadeInSection from "../components/FadeInSection";
 import globe from "../images/globe.png";
 import flight from '../images/flight.gif'
 import jet from '../images/jet.jpg'
@@ -22,6 +21,8 @@ import security from '../images/security.jpg'
 import CountUp from 'react-countup';
 import {useState} from 'react'
 import ScrollTrigger from 'react-scroll-trigger'
+import ceo from '../images/ceo.jpg'
+import Rating from "../components/Rating";
 
 function Home() {
   const [metricsVisible, setMetricVisible] = useState(false)
@@ -262,7 +263,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container fluid className="catch py-3">
+      <Container fluid className="catch py-3" id="whyus">
         <Container>
           <Row>
             <Col md={6} className="text-center text-md-start">
@@ -340,11 +341,10 @@ function Home() {
           <Row>
           <Col md={6}>
             <Card className="ceo-card text-center">
-              <Card.Img variant="top" src={globe} />
+            <Card.Img src={ceo} />
               <Card.Body>
-                <Card.Title>John Jones</Card.Title>
                 <Card.Text>
-                  Hi my name is John Jones and i am the CEO of Gocommute. Hi my name is John Jones and i am the CEO of Gocommute. Hi my name is John Jones and i am the CEO of Gocommute. Hi my name is John Jones and i am the CEO of Gocommute.
+                Hi , I am Onuche Moses Akoh, the Managing Director of Gocommute. With over two years of experience, We specialize in providing exceptional airport passenger support, migration consultancy, and VIP concierge services. Gocommute has a high customer retention and satisfaction rate, setting the industry standard for seamless travel experiences and personalized assistance.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -353,21 +353,21 @@ function Home() {
           <ScrollTrigger onEnter={() => setMetricVisible(true)} onExit={() => setMetricVisible(false)}> 
               <Row className="py-md-4 py-lg-5">
                 <Col md={6} className="pt-4">
-                  <span className="metric">{metricsVisible && <CountUp className="metric" start={1} duration={2} end={10} />}+</span>
+                  <span className="metric">{metricsVisible && <CountUp className="metric" start={0} duration={2} end={2} />}+</span>
                   <p className="metric-sub">years</p>
                 </Col>
                 <Col md={6} className="pt-4">
-                <span className="metric">{metricsVisible &&<CountUp className="metric" start={1} duration={2} end={5000} />}+</span>
+                <span className="metric">{metricsVisible &&<CountUp className="metric" start={0} duration={2} end={200} />}+</span>
                   <p className="metric-sub">clients</p>
                 </Col>
               </Row>
               <Row>
                 <Col md={6} className="pt-4">
-                <span className="metric">{metricsVisible &&<CountUp className="metric" start={1} duration={2} end={100} />}%</span>
+                <span className="metric">{metricsVisible &&<CountUp className="metric" start={0} duration={2} end={85} />}%</span>
                   <p className="metric-sub">Customer Retention</p>
                 </Col>
                 <Col md={6} className="pt-4">
-                <span className="metric">{metricsVisible &&<CountUp className="metric" start={1} duration={2} end={100} />}%</span>
+                <span className="metric">{metricsVisible &&<CountUp className="metric" start={0} duration={2} end={95} />}%</span>
                   <p className="metric-sub">Cutomer Satisfaction</p>
                 </Col>
               </Row>
@@ -377,7 +377,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container fluid className="body py-3">
+      <Container fluid className="body py-3" id="feedback">
         <Container>
               <Row>
                 <h3>What Our Happy Customers Are Saying</h3>
@@ -387,23 +387,41 @@ function Home() {
                 <CardGroup>
                 <Card className="rating-card">
               <Card.Body>
-                <Card.Title>John Jones</Card.Title>
+                <Row>
+                  <Col>
+                <Card.Title><h5 className="client-name">Kevwe Akpokiniovo</h5><span className="designation">CEO, Pallet deCore Ltd</span></Card.Title>
+                </Col>
+                <Col className="text-end">
+                <Rating value={5} color={'#FFE234'} />
+                </Col>
+                </Row>
                 <Card.Text>
-                  Excellent service from them. Excellent service from them. Excellent service from them.
+                Gocommute Travels has been a very reliable company since I started using their services.
+                Over the past 2 years, I have booked their services for professional and personal purposes, including for family members and I have not have any reason to worry or regret contracting them. 
+                I would recommend them happily.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+                <Card className="rating-card">
+              <Card.Body>
+              <Row>
+                <Col>
+                <Card.Title><h5>Dr Tunde Ajayi</h5></Card.Title>
+                </Col>
+                <Col className="text-end">
+                <Rating value={4.5} color={'#FFE234'} />
+                </Col>
+              </Row>
+                <Card.Text>
+                I booked a VIP Concierge and Airport Protocol service with Gocommute and they were awesome. They handled our entire trip from flight to Airport Protocol service. 
+                It was nice to pass that responsibility to an organization as competent and timely as Gocommute. They were also very responsive the entire time to handle questions and deal with travel logistics. 
+                Highly recommend!
                 </Card.Text>
               </Card.Body>
             </Card>
             <Card className="rating-card">
               <Card.Body>
-                <Card.Title>John Jones</Card.Title>
-                <Card.Text>
-                  Excellent service from them. Excellent service from them. Excellent service from them.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card className="rating-card">
-              <Card.Body>
-                <Card.Title>John Jones</Card.Title>
+                <Card.Title><h5 className="client-name">Dr Tunde Ajayi</h5></Card.Title>
                 <Card.Text>
                   Excellent service from them. Excellent service from them. Excellent service from them.
                 </Card.Text>
