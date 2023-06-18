@@ -7,10 +7,11 @@ import Footer from './components/Footer';
 import Concierge from './pages/services/Concierge';
 import DocumentProcurement from './pages/services/DocumentProcurement';
 import PassengerSupport from './pages/services/PassengerSupport';
-
+import Hotel from './pages/services/Hotel';
+import Tour from './pages/services/Tour';
 function App() {
   return (
-    <div>
+    <div>     
       <Router>
         <Header />
             <Routes>
@@ -20,6 +21,8 @@ function App() {
               <Route path="/services/concierge" element={<Concierge />} />
               <Route path="/services/passenger-support" element={<PassengerSupport />} />
               <Route path="/services/document-procurement" element={<DocumentProcurement />} />
+              <Route path="/services/hotel" element={<Hotel />} />
+              <Route path="/services/tour" element={<Tour />} />
             </Routes>
         <Footer />
       </Router>
