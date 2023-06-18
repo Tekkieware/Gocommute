@@ -1,41 +1,50 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {Card, Container, Col, Form, Row, Alert, Button } from 'react-bootstrap'
+import emailjs from '@emailjs/browser';
+import Loader from '../components/Loader';
 
 function Contact() {
-  const [error, setError] = useState("")
-  const [emailSent, setEmailSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [success, setSuccess] = useState('')
   useEffect(() => {
     window.scrollTo(0, 0)
    }, []);
    const form = useRef();
    const sendEmail = (e) => {
+    setLoading(true)
     e.preventDefault();
-    /*
-
-    emailjs.sendForm('service_r9mfqie', 'contact_form', form.current, 'wkbG4ac-EXzIqHQa_')
+    emailjs.sendForm('service_binj3va', 'template_cp0gzjh', form.current, 'wkbG4ac-EXzIqHQa_')
       .then((result) => {
-          setEmailSent(true);
+          setLoading(false)
+          setSuccess(result.text)
       }, (error) => {
-          setError(error.text);
+          setLoading(false)
+          setError(error.text)
       });
-      setEmailSent(true);
-    */
   };
   return (
     <div>
-      <Card className="bg-dark text-white text-center concierge-card">
-        <Card.ImgOverlay className="about-card-overlay">
-          <Card.Title className="hero-title">VIP Concierge. </Card.Title>
-          <Card.Text>Experience luxury unleashed with our VIP Concierge Service! From red carpet events to bespoke travel, indulge in a world of opulence. Let us handle the details while you savor the extraordinary. Elevate your lifestyle now!. </Card.Text>
-        </Card.ImgOverlay>
+      <Card className="bg-dark text-white text-center contact-new-card">
+      <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7927.155912010785!2d3.325382839571322!3d6.57482672124157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91e751d71485%3A0xf222ed73a7d14f9a!2sMurtala%20Muhammed%20International%20Airport%20-%20Lagos!5e0!3m2!1sen!2sng!4v1687086601962!5m2!1sen!2sng" width="1600" style={{border: "none"}} height="400" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </Card>
-      <Container fluid className="body pb-4">
+      <Container fluid className="catch pb-4">
         <Container>
           <div className="contact-card">
-          <Row className="mt-1">
+          <Row className='text-center'>
+            {success && <Alert variant='success'>We recieved your message. We will reach out to you as soon as possible. You can click the chat button on the bottom right corner to instantly connect with a staff.</Alert>}  
+            {error && <Alert variant='danger'>{error}&nbsp; We had an issue getting your message. Please can click the chat button on the bottom right corner to instantly connect with a staff.</Alert>}  
+          </Row>
+            {loading ? 
+            <Row className='text-center'>
+                <Loader />
+              </Row>
+              :
+              <div>
+                <Row className="mt-1">
             <Col>
               <h6>
-                <b>
+                <b className='contact-message'>
                   Send a Message and We'll Get In Touch:
                 </b>
               </h6>
@@ -156,6 +165,11 @@ function Contact() {
           </Card>
         </Col>
       </Row>
+              </div>
+          }
+          
+
+          
           </div>
         </Container>
       </Container>

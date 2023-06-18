@@ -25,34 +25,35 @@ function Footer() {
         <li className='footer-list'>Address: Gocommute Travels
           Departure Lobby, Muritala Muhammad International Airport, Lagos.</li>
         <li className='footer-list'>Phone: 07042408821, 08185823418</li>
-        <li className='footer-list'>Email: enquiry@gocommute.com.ng</li>
+        <li className='footer-list'>Email: enquiry@gocommute.com.ng, flight@gocommute.com.ng, hotel@gocommute.com.ng</li>
       </ul>
       </Col>
       <Col md={4} className="footer pt-1">
-      <h5>Quick Links:</h5>  
+      <h5>Services:</h5>  
       <ul>
-        <LinkContainer to='/'>
-        <li className='footer-list footer-link'>Home</li>
+        <LinkContainer to='/services/concierge'>
+        <li className='footer-list footer-link'>VIP Concierge</li>
         </LinkContainer>
-        <LinkContainer to="/about">
-        <li className='footer-list footer-link'>About Us</li>
+        <LinkContainer to="/services/document-procurement">
+        <li className='footer-list footer-link'>Migration Consultancy & Document Procurement</li>
         </LinkContainer>
-        <LinkContainer to="/contact">
-        <li className='footer-list footer-link'>Contact Us</li>
+        <LinkContainer to="/services/passenger-support">
+        <li className='footer-list footer-link'>Passenger Support</li>
         </LinkContainer>
       </ul>
       </Col>
       <Col md={4} className="footer pt-1">
       <h5>Social:</h5>  
       <ul>
-        <a href='https://www.facebook.com/profile.php?id=100090989649926' target="_blank" rel="noreferrer">
+        <a href='https://m.facebook.com/331797926899514/' target="_blank" rel="noreferrer">
         <li className='footer-list'><i className="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;Facebook</li>
         </a>
-        <a href='https://wa.me/2348082328425' target="_blank" rel="noreferrer">
+        
+        <a href='https://wa.me/2347042408821' target="_blank" rel="noreferrer">
         <li className='footer-list'><i class="fa-brands fa-square-whatsapp fa-whatsapp"></i>&nbsp;WhatsApp</li>
         </a>
-        <a href='https://www.linkedin.com/company/knight-corporate-services-ltd/' target="_blank" rel="noreferrer">
-        <li className='footer-list'><i className="fa-brands fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</li>
+        <a href='https://www.instagram.com/biggiz_official/' target="_blank" rel="noreferrer">
+        <li className='footer-list'><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</li>
         </a>
       </ul>
       </Col>

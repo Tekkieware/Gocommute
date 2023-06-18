@@ -58,7 +58,8 @@ function Home() {
                   <Row>
                     <Col className="text-center pt-2">
                       <LinkContainer to="services/document-procurement">
-                      <Button>More</Button>
+                      
+                      <Button className="more-button">more</Button>
                       </LinkContainer>
                     </Col>
                   </Row>
@@ -84,7 +85,7 @@ function Home() {
                   <Row className="text-center pt-2">
                     <Col>
                     <LinkContainer to="services/hotel">
-                      <Button>More</Button>
+                      <Button className="more-button">more</Button>
                       </LinkContainer>
                     </Col>
                   </Row>
@@ -110,7 +111,7 @@ function Home() {
                   <Row className="text-center pt-2">
                     <Col>
                     <LinkContainer to="services/tour">
-                      <Button>More</Button>
+                      <Button className="more-button">more</Button>
                       </LinkContainer>
                     </Col>
                   </Row>
@@ -136,7 +137,7 @@ function Home() {
                   <Row className="text-center pt-2">
                     <Col>
                     <LinkContainer to="services/concierge">
-                      <Button>More</Button>
+                      <Button className="more-button">more</Button>
                       </LinkContainer>
                     </Col>
                   </Row>
@@ -460,7 +461,9 @@ function Home() {
             <h3>Become One Of Our Happy Clients Now!!!!</h3>
           </Col>
           <Col md={6} className="text-center py-3 py-md-0">
+          <LinkContainer to='/contact'>
             <Button variant="primary" className="send">SEND A MESSAGE</Button>
+          </LinkContainer>
             </Col>
         </Row>
         </Container>
