@@ -2,16 +2,16 @@ import React, {useEffect} from 'react'
 import {Card, Row, Container, CardGroup, Col} from 'react-bootstrap'
 import Rating from "./components/Rating";
 
-function PassengerSupport() {
+function Hotel() {
   useEffect(() => {
     window.scrollTo(0, 0)
    }, []);
   return (
     <div>
-    <Card className="bg-dark text-white text-center support-card">
+    <Card className="bg-dark text-white text-center hotel-card">
       <Card.ImgOverlay className="about-card-overlay">
-        <Card.Title className="hero-title"><b className='hero-title d-none d-sm-inline'>Airport</b> Passenger Support. </Card.Title>
-        <Card.Text>Enjoy seamless travel with our passenger support services. From check-in to boarding, we're here to ensure your journey is comfortable and stress-free. Trust us to take care of every detail. </Card.Text>
+        <Card.Title className="hero-title">Hotel.</Card.Title>
+        <Card.Text>Discover comfort and hospitality at its finest with our exceptional hotel services. From luxurious accommodations to personalized experiences, we ensure a memorable stay that exceeds your expectations. Experience true hospitality with us.</Card.Text>
       </Card.ImgOverlay>
     </Card>
     <Container fluid className="body py-2 py-sm-4">
@@ -19,20 +19,20 @@ function PassengerSupport() {
         <Row>
         <CardGroup>
               <Card className="service-card text-center text-md-start my-5 m-sm-3">
-                <h5 className='text-center service-header'><b className='service-card-title '><i class="fas fa-plane-circle-check fa-fas fa-service fa-solid"></i></b></h5>
+                <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-hotel fa-service"></i></b></h5>
                 <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Airport Protocol</b></h5>
+                <h5><b className='service-card-title'>Reservations</b></h5>
                   <Card.Text>
-                  Elevate your airport experience with our Airport Protocol Service. Our knowledgeable staff provides personalized assistance for seamless navigation. From priority check-in to expedited security clearance, enjoy a smooth journey. Relax at exclusive lounges and let us handle the protocols while you focus on enjoying your trip.
+                  From budget-friendly to luxurious options, we cater to every traveler's needs. Our dedicated team ensures a hassle-free booking process, providing you with a comfortable and memorable stay at your desired destination. Book with us and make your travel dreams a reality.
                  </Card.Text>
                 </Card.Body>
               </Card>
               <Card className="service-card text-center text-md-start my-5 m-sm-3">
-              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-business-time fa-service"></i></b></h5>
+              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-handshake fa-service"></i></b></h5>
                 <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Immigration Fast-Track</b></h5>
+                <h5><b className='service-card-title'>Business Conference Facilities</b></h5>
                   <Card.Text>
-                  Our expert team ensures a seamless Fast-track through Nigeria Immigration procedures. Enjoy expedited clearance, personalized assistance, and VIP treatment. Let us handle the formalities while you breeze through the airport, saving you time and enhancing your travel experience.
+                  From state-of-the-art technology to flexible meeting spaces, we provide the perfect setting for successful conferences and corporate gatherings. Our dedicated team ensures seamless planning and execution, leaving you free to focus on your business objectives. Experience excellence in every detail.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -40,24 +40,14 @@ function PassengerSupport() {
             </CardGroup>
             <CardGroup>
               <Card className="service-card text-center text-md-start mt-sm-4 m-sm-3">
-              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-children fa-service"></i></b></h5>
+              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-utensils fa-service"></i></b></h5>
                 <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Unaccompanied Minor</b></h5>
+                <h5><b className='service-card-title'>Dining Facilities</b></h5>
                   <Card.Text>
-                  We prioritize the safety and comfort of young travelers. Our dedicated staff provides personalized assistance, ensuring a smooth and worry-free journey. From check-in to arrival, trust us to handle all aspects while keeping parents and guardians informed. Peace of mind for everyone involved.
-                 </Card.Text>
+                  From elegant restaurants to cozy cafes, indulge in a variety of culinary delights that cater to every palate. Our experienced chefs create culinary masterpieces using the finest ingredients, ensuring a memorable dining experience. Enjoy exceptional flavors and impeccable service with us.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-              <Card className="service-card text-center text-md-start mt-5 mt-sm-4 m-sm-3">
-              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-person-walking-luggage fa-service"></i></b></h5>
-               <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Baggage Retrieval</b></h5>
-                  <Card.Text>
-                  Say goodbye to the hassle of baggage retrieval with our efficient service. Our team takes care of every detail, ensuring your luggage is promptly delivered to you. Enjoy a stress-free travel experience knowing that we've got your bags covered. Focus on your journey while we handle the rest.
-                 </Card.Text>
-                </Card.Body>
-              </Card>
-              
             </CardGroup>
         </Row>
         
@@ -133,4 +123,4 @@ function PassengerSupport() {
   )
 }
 
-export default PassengerSupport
+export default Hotel

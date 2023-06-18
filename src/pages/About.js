@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Card, Container, Row, Col, CardGroup, Image } from "react-bootstrap";
 import gif from '../images/conceirge.gif';
 import ScrollTrigger from 'react-scroll-trigger'
@@ -7,6 +7,11 @@ import ceo from '../images/ceo.jpg'
 
 function About() {
   const [metricsVisible, setMetricVisible] = useState(false)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+   }, []);
+
+
   return (
     <div>
       <Card className="bg-dark text-white text-center about-card">

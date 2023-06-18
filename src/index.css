@@ -136,6 +136,7 @@ font-weight: 900;
   overflow-x: hidden;
   background-image: url('./images/emirates.jpg');
   background-repeat: repeat-y;
+  --bs-card-border-width: 0;
 
 }
 
@@ -159,11 +160,16 @@ font-weight: 900;
 
 
 /* Utils */
-.fa-solid{
+.fa-solid, .fa-regular{
   color: #494949;
   background-color: #dfeaf5;
   padding: 10px;
   border-radius: 20px;
+}
+
+.fa-service{
+  color: #0f678f;
+  background-color: #fff;
 }
 
 
@@ -230,6 +236,10 @@ font-weight: 900;
 
 .fas{
   font-size: 12px;
+}
+
+.fa-fas{
+  font-size: 20px;
 }
 /* button */
 .btn-primary{
@@ -305,6 +315,7 @@ font-weight: 900;
   border: none;
   border-radius: 10px;
   margin: 10px;
+  color: #000;
 }
 
 
@@ -363,7 +374,7 @@ ul > a{
   min-height: 400px;
   overflow-x: hidden;
   background-image: url('./images/about.jpg');
-  background-repeat: repeat-y;
+  --bs-card-border-width: 0;
 
 }
 
@@ -422,20 +433,107 @@ text-align: justify;
   border-radius: 20px;
 }
 
+/* services pages */
+.concierge-card{
+  min-height: 400px;
+  overflow-x: hidden;
+  background-image: url('./images/jet-hire.jpg');
+  --bs-card-border-width: 0;
 
+}
+
+.about-card-overlay{
+  padding-top: 16vh;
+  background: rgb(0, 0, 0, 0.6);
+  border: none;
+}
+
+.service-card{
+  background-color: #fff;
+  padding: 20px;
+  border : none;
+}
+
+.service-card-title{
+  font-family: 'Signika', sans-serif;
+}
+
+.service-header{
+  margin-top: -42px;
+}
+
+.document-card{
+  min-height: 400px;
+  overflow-x: hidden;
+  background-image: url('./images/passport-wide.jpg');
+  --bs-card-border-width: 0;
+
+}
+
+.support-card{
+  min-height: 400px;
+  overflow-x: hidden;
+  background-image: url('./images/support.jpg');
+  --bs-card-border-width: 0;
+
+}
+
+.hotel-card{
+  min-height: 400px;
+  overflow-x: hidden;
+  background-image: url('./images/hotel-page.jpg');
+  --bs-card-border-width: 0;
+
+}
+
+.tour-card{
+  min-height: 400px;
+  overflow-x: hidden;
+  background-image: url('./images/tour.jpg');
+  --bs-card-border-width: 0;
+
+}
+
+/*contact page */
+.contact-form{
+  border: none;
+}
+
+.assurance{
+  color: #0f678f;
+}
+
+.form-control{
+  border: none;
+  box-shadow: 0 0 5px #adc9d6;
+  font-size: 14px;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 5px #0f678f;
+}
+
+.contact-card{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: -80px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
 /* media queries */
 @media only screen and (min-width: 768px) {
   .tab-content{
     font-size:11px;
   }
 
-  .fa-solid{
-    color: #494949;
-    background-color: #dfeaf5;
+  .fa-solid, .fa-regular{
     padding: 10px;
     border-radius: 20px;
     font-size: 20px;
+    
   }
+
   .hero-card-overlay{
     padding-top: 10vh;
   }
@@ -443,6 +541,7 @@ text-align: justify;
     font-size: 60px;
 }
 }
+
 
 @media only screen and (min-width: 992px){
   .nav-link{
@@ -483,6 +582,30 @@ text-align: justify;
 }
 .navbar-nav .dropdown-menu{
   padding: 10px;
+}
+
+.document-card{
+  background-image: url('./images/passport-small.jpg');
+
+}
+.support-card{
+  background-image: url('./images/support-small.jpg');
+
+}
+
+.concierge-card{
+  background-image: url('./images/jet-hire-small.jpg');
+
+}
+
+.hotel-card{
+  background-image: url('./images/hotel-page-small.jpg');
+
+}
+
+.tour-card{
+  background-image: url('./images/tour-small.jpg');
+
 }
    
 }

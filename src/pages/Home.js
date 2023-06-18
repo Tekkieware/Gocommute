@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import HeroCard from "../components/HeroCard";
 import {
   Container,
@@ -23,9 +23,13 @@ import {useState} from 'react'
 import ScrollTrigger from 'react-scroll-trigger'
 import ceo from '../images/ceo.jpg'
 import Rating from "../components/Rating";
+import {LinkContainer} from 'react-router-bootstrap'
 
 function Home() {
   const [metricsVisible, setMetricVisible] = useState(false)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+   }, []);
   return (
     <div>
       <HeroCard />
@@ -53,7 +57,9 @@ function Home() {
                   </Row>
                   <Row>
                     <Col className="text-center pt-2">
-                      <Button>Start Now</Button>
+                      <LinkContainer to="services/document-procurement">
+                      <Button>More</Button>
+                      </LinkContainer>
                     </Col>
                   </Row>
                 </Container>
@@ -77,7 +83,9 @@ function Home() {
                   </Row>
                   <Row className="text-center pt-2">
                     <Col>
-                      <Button>Reserve Now</Button>
+                    <LinkContainer to="services/hotel">
+                      <Button>More</Button>
+                      </LinkContainer>
                     </Col>
                   </Row>
                 </Container>
@@ -101,7 +109,9 @@ function Home() {
                   </Row>
                   <Row className="text-center pt-2">
                     <Col>
-                      <Button>Book Now</Button>
+                    <LinkContainer to="services/tour">
+                      <Button>More</Button>
+                      </LinkContainer>
                     </Col>
                   </Row>
                 </Container>
@@ -125,7 +135,9 @@ function Home() {
                   </Row>
                   <Row className="text-center pt-2">
                     <Col>
-                      <Button>Contact Us Now</Button>
+                    <LinkContainer to="services/concierge">
+                      <Button>More</Button>
+                      </LinkContainer>
                     </Col>
                   </Row>
                 </Container>
@@ -379,7 +391,7 @@ function Home() {
       </Container>
       <Container fluid className="body py-3" id="feedback">
         <Container>
-              <Row>
+              <Row row className="text-center">
                 <h3>What Our Happy Customers Are Saying</h3>
                 <p>Don't take our word for it, here is what our customers have said about our service:</p>
               </Row>
@@ -392,7 +404,7 @@ function Home() {
                 <Card.Title><h5 className="client-name">Kevwe Akpokiniovo</h5><span className="designation">CEO, Pallet deCore Ltd</span></Card.Title>
                 </Col>
                 <Col className="text-end">
-                <Rating value={5} color={'#FFE234'} />
+                <Rating value={4.5} color={'#FFE234'} />
                 </Col>
                 </Row>
                 <Card.Text>
@@ -409,7 +421,7 @@ function Home() {
                 <Card.Title><h5>Dr Tunde Ajayi</h5></Card.Title>
                 </Col>
                 <Col className="text-end">
-                <Rating value={4.5} color={'#FFE234'} />
+                <Rating value={5} color={'#FFE234'} />
                 </Col>
               </Row>
                 <Card.Text>
@@ -421,9 +433,19 @@ function Home() {
             </Card>
             <Card className="rating-card">
               <Card.Body>
-                <Card.Title><h5 className="client-name">Dr Tunde Ajayi</h5></Card.Title>
+              <Row>
+                  <Col>
+                <Card.Title><h5 className="client-name">Comfort Edward</h5><span className="designation">CEO, C4unique ushers and events</span></Card.Title>
+                </Col>
+                <Col className="text-end">
+                <Rating value={4.5} color={'#FFE234'} />
+                </Col>
+                </Row>
                 <Card.Text>
-                  Excellent service from them. Excellent service from them. Excellent service from them.
+                Affordable and excellent service and your  help at the Airport made my journey stress free.
+                I will recommend you to my family and friends both home and away.
+
+
                 </Card.Text>
               </Card.Body>
             </Card>

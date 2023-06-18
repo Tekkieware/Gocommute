@@ -11,7 +11,7 @@ function Footer() {
         <Col md={12} className='footer'>
         <Image 
               src={logo}
-              width="70"
+              width="40"
               className="d-inline-block align-top footer-logo"
               alt="Knight services logo"
             />
@@ -25,7 +25,7 @@ function Footer() {
         <li className='footer-list'>Address: Gocommute Travels
           Departure Lobby, Muritala Muhammad International Airport, Lagos.</li>
         <li className='footer-list'>Phone: 07042408821, 08185823418</li>
-        <li className='footer-list'>Email: email</li>
+        <li className='footer-list'>Email: enquiry@gocommute.com.ng</li>
       </ul>
       </Col>
       <Col md={4} className="footer pt-1">

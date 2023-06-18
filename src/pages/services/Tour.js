@@ -2,16 +2,16 @@ import React, {useEffect} from 'react'
 import {Card, Row, Container, CardGroup, Col} from 'react-bootstrap'
 import Rating from "./components/Rating";
 
-function PassengerSupport() {
+function Tour() {
   useEffect(() => {
     window.scrollTo(0, 0)
    }, []);
   return (
     <div>
-    <Card className="bg-dark text-white text-center support-card">
+    <Card className="bg-dark text-white text-center tour-card">
       <Card.ImgOverlay className="about-card-overlay">
-        <Card.Title className="hero-title"><b className='hero-title d-none d-sm-inline'>Airport</b> Passenger Support. </Card.Title>
-        <Card.Text>Enjoy seamless travel with our passenger support services. From check-in to boarding, we're here to ensure your journey is comfortable and stress-free. Trust us to take care of every detail. </Card.Text>
+        <Card.Title className="hero-title">Tour.</Card.Title>
+        <Card.Text>Embark on unforgettable adventures with our curated tours. Explore captivating destinations, immerse yourself in local culture, and create lifelong memories. Let us take you on a remarkable journey.</Card.Text>
       </Card.ImgOverlay>
     </Card>
     <Container fluid className="body py-2 py-sm-4">
@@ -19,20 +19,20 @@ function PassengerSupport() {
         <Row>
         <CardGroup>
               <Card className="service-card text-center text-md-start my-5 m-sm-3">
-                <h5 className='text-center service-header'><b className='service-card-title '><i class="fas fa-plane-circle-check fa-fas fa-service fa-solid"></i></b></h5>
+                <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-eye fa-service"></i></b></h5>
                 <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Airport Protocol</b></h5>
+                <h5><b className='service-card-title'>Sightseeing</b></h5>
                   <Card.Text>
-                  Elevate your airport experience with our Airport Protocol Service. Our knowledgeable staff provides personalized assistance for seamless navigation. From priority check-in to expedited security clearance, enjoy a smooth journey. Relax at exclusive lounges and let us handle the protocols while you focus on enjoying your trip.
+                  Uncover the beauty of iconic landmarks and hidden gems with our extraordinary sightseeing tours. Our expert guides provide insightful commentary as you explore breathtaking sights and immerse yourself in local culture. Experience the wonders of each destination with our unforgettable sightseeing experiences.
                  </Card.Text>
                 </Card.Body>
               </Card>
               <Card className="service-card text-center text-md-start my-5 m-sm-3">
-              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-business-time fa-service"></i></b></h5>
+              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-sharp fa-solid fa-person-biking fa-service"></i></b></h5>
                 <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Immigration Fast-Track</b></h5>
+                <h5><b className='service-card-title'>Adventures</b></h5>
                   <Card.Text>
-                  Our expert team ensures a seamless Fast-track through Nigeria Immigration procedures. Enjoy expedited clearance, personalized assistance, and VIP treatment. Let us handle the formalities while you breeze through the airport, saving you time and enhancing your travel experience.
+                  Embrace thrilling adventures with our adrenaline-pumping experiences. From heart-pounding activities like hiking, rafting, and zip-lining to off-road explorations and wildlife encounters, we offer an array of thrilling adventures that cater to your adventurous spirit. Get ready to create lifelong memories and embark on the adventure of a lifetime.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -40,24 +40,23 @@ function PassengerSupport() {
             </CardGroup>
             <CardGroup>
               <Card className="service-card text-center text-md-start mt-sm-4 m-sm-3">
-              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-children fa-service"></i></b></h5>
+              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-building-columns fa-service"></i></b></h5>
                 <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Unaccompanied Minor</b></h5>
+                <h5><b className='service-card-title'>Cultural Tours</b></h5>
                   <Card.Text>
-                  We prioritize the safety and comfort of young travelers. Our dedicated staff provides personalized assistance, ensuring a smooth and worry-free journey. From check-in to arrival, trust us to handle all aspects while keeping parents and guardians informed. Peace of mind for everyone involved.
-                 </Card.Text>
+                  Immerse yourself in rich cultural heritage with our captivating cultural tours. Explore ancient ruins, visit historical landmarks, and engage with local traditions and customs. Our expert guides provide deep insights, allowing you to truly connect with the essence of each destination. Experience the magic of cultural discovery with us.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-              <Card className="service-card text-center text-md-start mt-5 mt-sm-4 m-sm-3">
-              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-person-walking-luggage fa-service"></i></b></h5>
-               <Card.Body className='py-0'>
-                <h5><b className='service-card-title'>Baggage Retrieval</b></h5>
+              <Card className="service-card text-center text-md-start mt-sm-4 m-sm-3">
+              <h5 className='text-center service-header'><b className='service-card-title'><i class="fa-solid fa-person-hiking fa-service"></i></b></h5>
+                <Card.Body className='py-0'>
+                <h5><b className='service-card-title'>Day Trips</b></h5>
                   <Card.Text>
-                  Say goodbye to the hassle of baggage retrieval with our efficient service. Our team takes care of every detail, ensuring your luggage is promptly delivered to you. Enjoy a stress-free travel experience knowing that we've got your bags covered. Focus on your journey while we handle the rest.
-                 </Card.Text>
+                  Embark on unforgettable day trips with our curated itineraries. From scenic escapes to cultural immersions, our expertly crafted day trips offer a perfect blend of exploration and relaxation. Discover hidden gems, indulge in local cuisine, and create cherished memories in a single day. Let us make your day trip extraordinary.
+                  </Card.Text>
                 </Card.Body>
               </Card>
-              
             </CardGroup>
         </Row>
         
@@ -133,4 +132,4 @@ function PassengerSupport() {
   )
 }
 
-export default PassengerSupport
+export default Tour
