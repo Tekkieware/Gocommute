@@ -9,6 +9,7 @@ import DocumentProcurement from './pages/services/DocumentProcurement';
 import PassengerSupport from './pages/services/PassengerSupport';
 import Hotel from './pages/services/Hotel';
 import Tour from './pages/services/Tour';
+
 function App() {
   return (
     <div>     
@@ -25,6 +26,19 @@ function App() {
               <Route path="/services/tour" element={<Tour />} />
             </Routes>
         <Footer />
+        <a
+              href="https://wa.me/2347042408821"
+              target="_blank"
+              rel="noreferrer"
+            >
+          <div className="whatsapp text-center">
+            
+             <i class="fa-brands fa-2x fa-square-whatsapp fa-whatsapp2"></i>
+           
+            <br />
+            <b className='chat'><b>Live Chat</b></b>
+          </div>
+          </a>
       </Router>
     </div>
   );

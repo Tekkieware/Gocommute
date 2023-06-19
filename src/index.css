@@ -241,13 +241,36 @@ font-weight: 900;
 .fa-fas{
   font-size: 20px;
 }
+
+.whatsapp{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.fa-whatsapp2 {
+  background-color: transparent !important;
+  color: rgb(31, 207, 31) !important;
+  border-radius: 5px;
+}
+
+
+.chat{
+  color: rgb(31, 207, 31);
+  font-size: 11px;
+  border: 1px solid rgb(31, 207, 31);
+  padding: 0 2px;
+  border-radius: 2px;
+  font-family: 'Signika', sans-serif;
+  
+}
+
 /* button */
 .btn-primary{
   background-color: #0f678f;
   padding: 5px 30px;
   border-radius: 50px;
   font-size: 12px;
-  font-weight: 600;
   border: none;
   }
   
@@ -349,7 +372,7 @@ font-weight: 900;
   background-color: #253b46;
   color: #F3F4F8;
   padding: 0;
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
 }
 .footer > ul{
@@ -608,6 +631,13 @@ margin-top: -150px;
   background-image: url('./images/contact.jpg');
   --bs-card-border-width: 0;
 }
+
+.contact-card-overlay{
+  padding-top: 16vh;
+  background: rgb(0, 0, 0, 0.8);
+  border: none;
+}
+
 /* media queries */
 @media only screen and (min-width: 768px) {
   .tab-content{
@@ -651,9 +681,10 @@ margin-top: -150px;
 
 @media only screen and (max-width: 992px){
 .sections{
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .pages{
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 .nav-link{

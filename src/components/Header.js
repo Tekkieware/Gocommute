@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import { useLocation } from 'react-router-dom';
 import logo from '../images/Logo.png'
 import {Navbar, Nav, Image, Container, Button} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -6,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 function Header() {
+  const location = useLocation();
   return (
         <Navbar expand="lg" sticky='top' collapseOnSelect>
           <Container>
@@ -22,12 +24,15 @@ function Header() {
           </LinkContainer>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
-           <Nav className="me-auto sections">
+          {location.pathname === '/' &&
+          <Nav className="me-auto sections">
           
             <Nav.Link active={false} href='#whyus'>Why Us</Nav.Link>
             <Nav.Link active={false} href='#feedback'>Customer Feedback</Nav.Link>
             
           </Nav>
+          }
+           
             
           <Nav className="ms-auto pages">
             <LinkContainer to="/">

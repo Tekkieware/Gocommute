@@ -26,9 +26,9 @@ function Contact() {
   return (
     <div>
       <Card className="bg-dark text-white text-center contact-page-card">
-        <Card.ImgOverlay className="about-card-overlay">
+        <Card.ImgOverlay className="contact-card-overlay">
           <Card.Title className="hero-title">Get in touch</Card.Title>
-          <Card.Text>Send us a message and will reach out to you as soon as possible. Alternatively, click the chat button at the bottom right corner and speak to a staff instantly. </Card.Text>
+          <Card.Text>Send us a message and we'll reach out to you as soon as possible. Alternatively, click the chat button at the bottom right corner and speak to a staff instantly. </Card.Text>
         </Card.ImgOverlay>
       </Card>
       <Container fluid className="catch pb-4">
@@ -202,7 +202,7 @@ function Contact() {
                 <h6>Send an email.</h6>
                 <p className='call-text'>Send us an email to discover how our services can transform your experience today.</p>
                 <a href='mailto:contactgocommute@gmail.com' className='call-link'>contactgocommute@gmail.com</a>
-                <a href='mailto:enquiry@gocommute.com.ng' className='call-link'>enquiry@gocommute.com.ng</a>
+                <a href='mailto:travelenquiry@gocommute.com.ng' className='call-link'>travelenquiry@gocommute.com.ng</a>
                 </Card>
                 </div>
                 </Col>
