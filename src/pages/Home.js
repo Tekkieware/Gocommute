@@ -24,6 +24,7 @@ import ScrollTrigger from 'react-scroll-trigger'
 import ceo from '../images/ceo.jpg'
 import Rating from "../components/Rating";
 import {LinkContainer} from 'react-router-bootstrap'
+import {Helmet} from 'react-helmet'
 
 function Home() {
   const [metricsVisible, setMetricVisible] = useState(false)
@@ -32,6 +33,10 @@ function Home() {
    }, []);
   return (
     <div>
+      <Helmet>
+        <title>Gocommute - Your Exclusive Gateway to flawless Journeys </title>
+        <meta name="description" content="Your trusted destination for VIP concierge services, migration consultancy, document procurement, and unparalleled passenger support" />
+    </Helmet>
       <HeroCard />
       <Container fluid className="body pb-4">
         <Container>
@@ -150,7 +155,7 @@ function Home() {
       <Container fluid className="white-section py-3">
         <Container>
           <Row>
-            <h1>Stress-Free Travel!!!</h1>
+            <h1>Stress-Free Travel!</h1>
           </Row>
           <Row>
             <Col md={6}>
@@ -192,7 +197,7 @@ function Home() {
       <Container fluid className="body py-3">
         <Container>
           <Row>
-            <h1>Exclusivity Redefined!!!</h1>
+            <h1>Exclusivity Redefined!</h1>
           </Row>
           <Row>
             <Col md={6}>
@@ -232,7 +237,7 @@ function Home() {
       <Container fluid className="white-section py-3">
         <Container>
           <Row>
-            <h1>Excellence in Hospitality!!!</h1>
+            <h1>Excellence in Hospitality!</h1>
           </Row>
           <Row>
             <Col md={6}>
@@ -303,7 +308,7 @@ function Home() {
                 <Row>
                   <Card className="why-card py-3 py-md-3 p-md-5">
                     <ul className="step-list">
-                      <h4 className="text-center">Bespoke Serivce</h4>
+                      <h4 className="text-center">Bespoke Service</h4>
                       <hr />
                       <p>
                         Indulge in the epitome of luxury and personalized

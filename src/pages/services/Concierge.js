@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {Card, Container, Col, Row, CardGroup} from 'react-bootstrap'
 import Rating from "./components/Rating";
+import {Helmet} from 'react-helmet'
 
 function Concierge() {
   useEffect(() => {
@@ -8,6 +9,10 @@ function Concierge() {
    }, []);
   return (
     <div>
+      <Helmet>
+        <title>Gocommute - VIP Concierge Services</title>
+        <meta name="description" content="Experience the epitome of luxury and convenience with Gocommute's VIP concierge services. From exclusive transportation arrangements to personalized reservations and beyond, our dedicated team is here to curate a seamless journey tailored to your every need. Discover the pinnacle of travel excellence with Gocommute's renowned concierge services." />
+    </Helmet>
       <Card className="bg-dark text-white text-center concierge-card">
         <Card.ImgOverlay className="about-card-overlay">
           <Card.Title className="hero-title">VIP Concierge. </Card.Title>

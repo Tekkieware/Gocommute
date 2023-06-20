@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import {Card, Container, Col, Form, Row, Alert, CardGroup } from 'react-bootstrap'
 import emailjs from '@emailjs/browser';
 import Loader from '../components/Loader';
+import {Helmet} from 'react-helmet'
 
 function Contact() {
   const [loading, setLoading] = useState(false)
@@ -25,6 +26,10 @@ function Contact() {
   };
   return (
     <div>
+       <Helmet>
+        <title>Contact Gocommute - Reach Out for Unparalleled Support</title>
+        <meta name="description" content="Contact Gocommute for top-notch VIP concierge, migration consultancy, document procurement, and passenger support services. Our experienced team is ready to assist you with your travel needs and migration aspirations. Get in touch today for an unmatched level of personalized service and support." />
+    </Helmet>
       <Card className="bg-dark text-white text-center contact-page-card">
         <Card.ImgOverlay className="contact-card-overlay">
           <Card.Title className="hero-title">Get in touch</Card.Title>

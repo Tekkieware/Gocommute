@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {Card, Row, Container, CardGroup, Col} from 'react-bootstrap'
 import Rating from "./components/Rating";
+import {Helmet} from 'react-helmet'
 
 function DocumentProcurement() {
   useEffect(() => {
@@ -8,6 +9,10 @@ function DocumentProcurement() {
    }, []);
   return (
     <div>
+      <Helmet>
+        <title>Migration Consultancy and Document Procurement Services by Gocommute - Simplifying Your Journey</title>
+        <meta name="description" content="Let Gocommute be your trusted partner in navigating the complexities of migration. Our experienced consultants provide expert guidance on visa applications, work permits, residency, and citizenship. Additionally, our streamlined document procurement services ensure a hassle-free process. Trust Gocommute to simplify your migration journey with our comprehensive consultancy and document procurement solutions." />
+    </Helmet>
     <Card className="bg-dark text-white text-center document-card">
       <Card.ImgOverlay className="about-card-overlay">
         <Card.Title className="hero-title">Document Procurement. </Card.Title>

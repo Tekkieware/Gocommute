@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {Card, Row, Container, CardGroup, Col} from 'react-bootstrap'
 import Rating from "./components/Rating";
+import {Helmet} from 'react-helmet'
 
 function Hotel() {
   useEffect(() => {
@@ -8,6 +9,10 @@ function Hotel() {
    }, []);
   return (
     <div>
+       <Helmet>
+        <title>Premier Hotel Services by Gocommute - Elevate Your Stay with Unmatched Excellence</title>
+        <meta name="description" content="Experience luxury and comfort like never before with Gocommute's premier hotel services. From exclusive reservations at world-class hotels to personalized amenities and impeccable guest support, we ensure your stay is nothing short of extraordinary. Discover the epitome of hospitality with Gocommute's hotel services and create unforgettable memories during your travels." />
+    </Helmet>
     <Card className="bg-dark text-white text-center hotel-card">
       <Card.ImgOverlay className="about-card-overlay">
         <Card.Title className="hero-title">Hotel.</Card.Title>

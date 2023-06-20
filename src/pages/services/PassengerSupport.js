@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {Card, Row, Container, CardGroup, Col} from 'react-bootstrap'
 import Rating from "./components/Rating";
+import {Helmet} from 'react-helmet'
 
 function PassengerSupport() {
   useEffect(() => {
@@ -8,6 +9,10 @@ function PassengerSupport() {
    }, []);
   return (
     <div>
+       <Helmet>
+        <title>Passenger Support Services by Gocommute - Your Journey, Our Priority</title>
+        <meta name="description" content="Gocommute's passenger support services go beyond expectations to ensure a stress-free travel experience. From airport assistance and luggage handling to personalized itineraries and round-the-clock customer support, our dedicated team is here to make your journey seamless and memorable. Discover the unparalleled level of care and assistance with Gocommute's passenger support services." />
+    </Helmet>
     <Card className="bg-dark text-white text-center support-card">
       <Card.ImgOverlay className="about-card-overlay">
         <Card.Title className="hero-title"><b className='hero-title d-none d-sm-inline'>Airport</b> Passenger Support. </Card.Title>
