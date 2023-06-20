@@ -25,7 +25,7 @@ function Footer() {
         <li className='footer-list'>Address: Gocommute Travels
           Departure Lobby, Muritala Muhammad International Airport, Lagos.</li>
         <li className='footer-list'>Phone: 07042408821, 08185823418</li>
-        <li className='footer-list'>Email: travelenquiry@gocommute.com.ng, flight@gocommute.com.ng, hotel@gocommute.com.ng</li>
+        <li className='footer-list'>Email: travelenquiry@gocommute.com.ng</li>
       </ul>
       </Col>
       <Col md={4} className="footer pt-1">
