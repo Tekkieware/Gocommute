@@ -23,7 +23,7 @@ function Footer() {
       <h5>Contact Information:</h5>  
       <ul>
         <li className='footer-list'>Address: Gocommute Travels
-          Departure Lobby, Muritala Muhammad International Airport, Lagos.</li>
+          Departure Lobby, Murtala Muhammad International Airport, Lagos.</li>
         <li className='footer-list'>Phone: 07042408821, 08185823418</li>
         <li className='footer-list'>Email: travelenquiry@gocommute.com.ng</li>
       </ul>
