@@ -45,19 +45,18 @@ function Home() {
               <Tab eventKey="flight" title="Flight" className="py-3">
                 <Container>
                   <Row>
-                    <Col>
+                    <Col md={3}>
                       <i class="fa-solid fa-globe"></i> Passport Processing
                     </Col>
-                    <Col>
+                    <Col md={3}>
                       <i class="fa-solid fa-passport"></i> Ticket Booking
                     </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-certificate"></i> NDLEA Clearance
                       Certificate
                     </Col>
-                    <Col className="d-none d-md-block">
-                      <i class="fa-solid fa-registered"></i> E-mmigrant
-                      Registration
+                    <Col md={3}>
+                    <i class="fa-solid fa-plane"></i> Private Jets
                     </Col>
                   </Row>
                   <Row>
@@ -73,17 +72,17 @@ function Home() {
               <Tab eventKey="hotel" title="Hotel" className="py-3">
                 <Container>
                   <Row>
-                    <Col>
+                    <Col md={3}>
                       <i class="fa-solid fa-hotel"></i> Reservations
                     </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-utensils"></i> Dining Facilities
                     </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-handshake"></i> Business Conference
                       Facilities
                     </Col>
-                    <Col>
+                    <Col md={3}>
                       <i class="fa-solid fa-car"></i> Shuttle Service
                     </Col>
                   </Row>
@@ -99,16 +98,16 @@ function Home() {
               <Tab eventKey="tour" title="Tour" className="py-3">
                 <Container>
                   <Row>
-                    <Col>
+                    <Col md={3}>
                       <i class="fa-solid fa-eye"></i> Sightseeing
                     </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-person-biking"></i> Adventure
                     </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-person-hiking"></i> Day Trips
                     </Col>
-                    <Col>
+                    <Col md={3}>
                       <i class="fa-solid fa-building-columns"></i> Cultural
                       Tours
                     </Col>
@@ -125,22 +124,21 @@ function Home() {
               <Tab eventKey="concierge" title="Concierge" className="py-3">
                 <Container>
                   <Row>
-                    <Col>
-                      <i class="fa-solid fa-plane"></i> Private Jets
+                    <Col md={3}><i class="fa-solid fa-user-secret"></i> Security Service
                     </Col>
-                    <Col>
-                      <i class="fa-solid fa-user-secret"></i> Security Service
-                    </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-person-walking-luggage"></i> Airport
                       Assistance
                     </Col>
-                    <Col className="d-none d-md-block">
+                    <Col md={3}>
                       <i class="fa-solid fa-cart-shopping"></i> Shopping Service
+                    </Col>
+                    <Col md={3}>
+                    <i class="fa-sharp fa-solid fa-wine-glass"></i> Lounge
                     </Col>
                   </Row>
                   <Row className="text-center pt-2">
-                    <Col>
+                    <Col md={3}>
                     <LinkContainer to="services/concierge">
                       <Button className="more-button">more</Button>
                       </LinkContainer>
@@ -167,15 +165,13 @@ function Home() {
               </Row>
               <Row>
                 <p>
-                  Our expert team takes care of every detail, ensuring
-                  flawlessly managed flight reservations for your ultimate
-                  travel convenience and peace of mind.
+                Our expert team ensures flawless flight reservations, providing ultimate travel convenience and peace of mind
                 </p>
               </Row>
-              <Row>
+              <Row className="d-none d-md-block">
                 <h2>Hassle-Free Visa and Passport Assistance</h2>
               </Row>
-              <Row>
+              <Row className="d-none d-md-block">
                 <p>
                 Our visa and passport assistance service ensures effortless and efficient acquisition of your travel documents, eliminating application process stress.</p>
               </Row>
@@ -187,8 +183,7 @@ function Home() {
               </Row>
               <Row>
                 <p>
-                Trust us as your reliable travel companion, providing support, expertise, and assistance for a smooth, enjoyable, and worry-free journey.
-                </p>
+                Trust us as your reliable travel companion, ensuring a smooth, worry-free journey.</p>
               </Row>
             </Col>
           </Row>
@@ -209,23 +204,21 @@ function Home() {
               </Row>
               <Row>
                 <p>
-                  The Epitome of luxury and convenience await with our private jet charters. Enjoy comfort, personalized service, and seamless travel in style and sophistication.</p>
+                Experience luxury with our private jet charters. Enjoy personalized service and comfort. </p></Row>
+              <Row className="d-block d-md-none">
+              <Image src={security} alt="Elite VIP Protection Services." fluid/>
               </Row>
               <Row>
                 <h2>Elite VIP Protection Services.</h2>
               </Row>
               <Row>
                 <p>
-                Luxury Enjoy elite VIP protection services for maximum security and peace of mind. Our professionals and advanced measures ensure safety, privacy, and confident navigation.
-                </p>
+                Enjoy VIP protection for peace of mind. Our professionals ensure safety, privacy, and satisfaction.</p>
               </Row>
-              <Row className="d-block d-md-none">
-              <Image src={security} alt="Elite VIP Protection Services." fluid/>
-              </Row>
-              <Row className="pt-3 pt-md-0">
+              <Row className="pt-3 pt-md-0 d-none d-md-block">
                 <h2>Unparalleled Airport Assistance</h2>
               </Row>
-              <Row>
+              <Row className="d-none d-md-block"> 
                 <p>
                   Enjoy unmatched airport assistance with our attentive team, ensuring a hassle-free and smooth travel experience from arrival to departure.
                 </p>
@@ -254,24 +247,22 @@ function Home() {
                   travel planning seamless and stress-free.
                 </p>
               </Row>
+              <Row className="d-block d-md-none">
+              <Image src={conference} alt="State-of-the-Art Conference Facilities" fluid/>
+              </Row>
               <Row>
                 <h2>State-of-the-Art Conference Facilities</h2>
               </Row>
               <Row>
                 <p>
                   {" "}
-                  Elevate your business events with our state-of-the-art
-                  conference facilities, designed to inspire and enhance
-                  productivity for successful meetings and gatherings.
+                  Enhance business events with our inspiring conference facilities, designed for productivity and success.
                 </p>
               </Row>
-              <Row className="d-block d-md-none">
-              <Image src={conference} alt="State-of-the-Art Conference Facilities" fluid/>
-              </Row>
-              <Row className="pt-3 pt-md-0">
+              <Row className="pt-3 pt-md-0 d-none d-md-block">
                 <h2>Convenient Shuttle Service</h2>
               </Row>
-              <Row>
+              <Row className="d-none d-md-block">
                 <p>
                   Enjoy convenient shuttle service for seamless transportation,
                   providing a hassle-free and reliable travel experience.

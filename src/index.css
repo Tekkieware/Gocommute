@@ -14,7 +14,7 @@
 }
 h1,h2,h3,h4,h5,h6{
   font-family: 'Signika', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   
 }
 
@@ -152,8 +152,12 @@ font-weight: 900;
 }
 
 .tab-content{
-  font-weight: bold;
-  font-size: 9px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tab-content, .col-md-3{
+  padding: 5px;
 }
 
 
@@ -642,6 +646,9 @@ margin-top: -150px;
 @media only screen and (min-width: 768px) {
   .tab-content{
     font-size:11px;
+  }
+  .tab-content, .col-md-3{
+    padding: 5px;
   }
 
   .fa-solid, .fa-regular{
