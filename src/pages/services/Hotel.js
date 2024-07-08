@@ -12,6 +12,10 @@ function Hotel() {
        <Helmet>
         <title>Premier Hotel Services by Gocommute - Elevate Your Stay with Unmatched Excellence</title>
         <meta name="description" content="Experience luxury and comfort like never before with Gocommute's premier hotel services. From exclusive reservations at world-class hotels to personalized amenities and impeccable guest support, we ensure your stay is nothing short of extraordinary. Discover the epitome of hospitality with Gocommute's hotel services and create unforgettable memories during your travels." />
+        <meta property="og:title" content="Gocommute - Hotel Services" />
+        <meta property="og:url" content="https://gocommute.com.ng/services/hotel" />
+        <meta property="og:description" content="Premier Hotel Services by Gocommute" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
     <Card className="bg-dark text-white text-center hotel-card">
       <Card.ImgOverlay className="about-card-overlay">

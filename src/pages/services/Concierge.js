@@ -12,6 +12,10 @@ function Concierge() {
       <Helmet>
         <title>Gocommute - VIP Concierge Services</title>
         <meta name="description" content="Experience the epitome of luxury and convenience with Gocommute's VIP concierge services. From exclusive transportation arrangements to personalized reservations and beyond, our dedicated team is here to curate a seamless journey tailored to your every need. Discover the pinnacle of travel excellence with Gocommute's renowned concierge services." />
+        <meta property="og:title" content="Gocommute - VIP Concierge Service" />
+        <meta property="og:url" content="https://gocommute.com.ng/services/concierge" />
+        <meta property="og:description" content="Gocommute's VIP concierge services" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
       <Card className="bg-dark text-white text-center concierge-card">
         <Card.ImgOverlay className="about-card-overlay">

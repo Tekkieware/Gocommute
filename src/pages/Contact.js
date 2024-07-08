@@ -29,6 +29,10 @@ function Contact() {
        <Helmet>
         <title>Contact Gocommute - Reach Out for Unparalleled Support</title>
         <meta name="description" content="Contact Gocommute for top-notch VIP concierge, migration consultancy, document procurement, and passenger support services. Our experienced team is ready to assist you with your travel needs and migration aspirations. Get in touch today for an unmatched level of personalized service and support." />
+        <meta property="og:title" content="Contact Us for Support" />
+        <meta property="og:url" content="https://gocommute.com.ng/contact" />
+        <meta property="og:description" content="Contact Gocommute for top-notch VIP concierge" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
       <Card className="bg-dark text-white text-center contact-page-card">
         <Card.ImgOverlay className="contact-card-overlay">

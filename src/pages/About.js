@@ -17,6 +17,10 @@ function About() {
       <Helmet>
         <title>About Gocommute - Elevating Journeys with Unmatched Expertise</title>
         <meta name="description" content="Discover the essence of Gocommute, a leading provider of VIP concierge, migration consultancy, document procurement, and passenger support services. Learn about our commitment to exceptional service, our dedicated team of experts, and how we empower individuals and businesses to navigate seamless journeys and successful migrations. Explore our about page to uncover the Gocommute difference." />
+        <meta property="og:title" content="About Gocommute" />
+        <meta property="og:url" content="https://gocommute.com.ng/about" />
+        <meta property="og:description" content="Discover the essence of Gocommute" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
       <Card className="bg-dark text-white text-center about-card">
         <Card.ImgOverlay className="about-card-overlay">

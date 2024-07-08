@@ -12,6 +12,10 @@ function PassengerSupport() {
        <Helmet>
         <title>Passenger Support Services by Gocommute - Your Journey, Our Priority</title>
         <meta name="description" content="Gocommute's passenger support services go beyond expectations to ensure a stress-free travel experience. From airport assistance and luggage handling to personalized itineraries and round-the-clock customer support, our dedicated team is here to make your journey seamless and memorable. Discover the unparalleled level of care and assistance with Gocommute's passenger support services." />
+        <meta property="og:title" content="Gocommute - Passenger Support" />
+        <meta property="og:url" content="https://gocommute.com.ng/services/passenger-support" />
+        <meta property="og:description" content="Passenger Support Services, Your Journey, Our Priority" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
     <Card className="bg-dark text-white text-center support-card">
       <Card.ImgOverlay className="about-card-overlay">

@@ -36,6 +36,10 @@ function Home() {
       <Helmet>
         <title>Gocommute - Your Exclusive Gateway to flawless Journeys </title>
         <meta name="description" content="Your trusted destination for VIP concierge services, migration consultancy, document procurement, and unparalleled passenger support" />
+        <meta property="og:title" content="Gocommute - Your Travel Companion" />
+        <meta property="og:url" content="https://gocommute.com.ng/" />
+        <meta property="og:description" content="Your trusted destination for VIP concierge services" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
       <HeroCard />
       <Container fluid className="body pb-4">

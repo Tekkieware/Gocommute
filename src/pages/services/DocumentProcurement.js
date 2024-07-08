@@ -12,6 +12,10 @@ function DocumentProcurement() {
       <Helmet>
         <title>Migration Consultancy and Document Procurement Services by Gocommute - Simplifying Your Journey</title>
         <meta name="description" content="Let Gocommute be your trusted partner in navigating the complexities of migration. Our experienced consultants provide expert guidance on visa applications, work permits, residency, and citizenship. Additionally, our streamlined document procurement services ensure a hassle-free process. Trust Gocommute to simplify your migration journey with our comprehensive consultancy and document procurement solutions." />
+        <meta property="og:title" content="Gocommute - Migration Consultancy" />
+        <meta property="og:url" content="https://gocommute.com.ng/services/document-procurement" />
+        <meta property="og:description" content="Migration Consultancy and Document Procurement Services" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
     <Card className="bg-dark text-white text-center document-card">
       <Card.ImgOverlay className="about-card-overlay">

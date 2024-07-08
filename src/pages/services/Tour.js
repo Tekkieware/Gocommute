@@ -12,6 +12,10 @@ function Tour() {
       <Helmet>
         <title>Exceptional Tour Services by Gocommute - Discover Extraordinary Destinations</title>
         <meta name="description" content="Embark on unforgettable journeys with Gocommute's exceptional tour services. From curated itineraries to hidden gems and iconic landmarks, our knowledgeable guides ensure you experience the true essence of each destination. Discover the world's wonders with Gocommute's tour services and create lifelong memories during your travels." />
+        <meta property="og:title" content="Gocommute - Tour Services" />
+        <meta property="og:url" content="https://gocommute.com.ng/services/tour" />
+        <meta property="og:description" content="Exceptional Tour Services by Gocommute" />
+        <meta property="og:image" content="https://gocommute.com.ng/static/media/gocommute.jpeg" />
     </Helmet>
     <Card className="bg-dark text-white text-center tour-card">
       <Card.ImgOverlay className="about-card-overlay">
